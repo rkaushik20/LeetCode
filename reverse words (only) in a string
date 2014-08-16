@@ -1,0 +1,10 @@
+class Solution():
+    # @param s, a string
+    # @return a string
+        
+    def reverseWords(self, s):
+        return ' '.join((s.split()[::-1]))
+        
+k=Solution()
+p=raw_input()
+print k.reverseWords(p)
