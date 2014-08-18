@@ -1,0 +1,17 @@
+class Solution:
+    # @param A, a list of integer
+    # @return an integer
+    def singleNumber(self, A):
+        b={}
+        for i in A:
+            b[i]=b.get(i,0)+1
+        for num,val in b.items():
+            if val==1:
+                return num
+            
+        
+a=Solution()
+i=raw_input()
+b=map(int,i.split())
+c=a.singleNumber(b)
+print c
