@@ -1,0 +1,21 @@
+class Solution:
+    # @return an integer
+    def reverse(self, x):
+        x=str(x)
+        l=len(x)
+        flag=0
+        if x[0]=='-':
+	        b=x[1:l]
+	        flag=1
+        else:
+	        b=x
+        if flag==1:
+	        c=int(b[::-1])
+	        return c*-1
+        else:
+	        c=int(b[::-1])
+	        return c
+	        
+a=Solution()
+b=int(raw_input())
+print a.reverse(b)
